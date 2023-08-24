@@ -1,6 +1,5 @@
 .buttons{
-    width: 1300px;
-    height: 400px;
+    height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;

@@ -3,8 +3,10 @@ document.querySelector('.yes').addEventListener('click', function () {
 })
 
 document.querySelector('.no').addEventListener('mousemove', function () {
-    this.style.top = `${randomInt(400, -50)}px`
-    this.style.left = `${randomInt(500, -500)}px`
+    console.log(window.innerWidth/2);
+    console.log(-(window.innerWidth/2));
+    this.style.top = `${randomInt((window.innerHeight/2) -20, 0)}px`
+    this.style.left = `${randomInt((window.innerWidth/2) - 40, -(window.innerWidth/2) + 40)}px`
     
     document.querySelector('.yes').style.backgroundColor = ''
 })
