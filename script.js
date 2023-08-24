@@ -3,8 +3,6 @@ document.querySelector('.yes').addEventListener('click', function () {
 })
 
 document.querySelector('.no').addEventListener('mousemove', function () {
-    console.log(window.innerWidth/2);
-    console.log(-(window.innerWidth/2));
     this.style.top = `${randomInt((window.innerHeight/2) -20, 0)}px`
     this.style.left = `${randomInt((window.innerWidth/2) - 40, -(window.innerWidth/2) + 40)}px`
     
